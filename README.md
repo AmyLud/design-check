@@ -2,6 +2,9 @@
 
 - [Problem](#problem)
 - [Solution](#solution)
+- [AI Assist](#ai-assist)
+- [Tradeoffs](#tradeoffs)
+- [Scaling Up](#scaling-up)
 - [What it checks](#what-it-checks)
 - [Prerequisites](#prerequisites)
 - [Quickstart](#quickstart)
@@ -59,8 +62,6 @@ Instead of waiting for manual design review, developers can run a command and **
 ## AI Assist
 
 I purposely targeted a problem that AI currently struggles with, since I myself have been frustrated with the small errors made during execution. I'm a front end dev and designer mostly, so built something that I A) have never built (so cool!) and B) that would help me simplify my AI flow so Im not asking it to fix designs over and over but can instead pass it one big command to fix a good chunk of the issues.
-
-## How AI Helped Build This in Under 3 Hours
 
 I used AI as a **force multiplier for the parts of software development that are high-effort but low-creativity**, while staying involved in the decisions that required judgment, product sense, or tradeoffs.
 
