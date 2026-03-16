@@ -1,6 +1,155 @@
 # design-check
 
-A CLI tool that compares a Figma design frame against a live rendered web page and reports visual discrepancies. Run it locally or wire it into CI to get automatic PR comments.
+- [Problem](#problem)
+- [Solution](#solution)
+- [What it checks](#what-it-checks)
+- [Prerequisites](#prerequisites)
+- [Quickstart](#quickstart)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Config file](#config-file)
+- [Auto-fix with Claude](#auto-fix-with-claude)
+- [GitHub Actions — automatic PR comments](#github-actions--automatic-pr-comments)
+- [Artifacts](#artifacts)
+- [Exit codes](#exit-codes)
+- [Development](#development)
+
+---
+
+## Problem
+
+Working across product, design, and engineering, I’ve consistently noticed that developers often miss small design details—even when using AI code assistance.  
+
+AI tools can generate UI code quickly, but they frequently make simple visual mistakes when translating designs into implementation. For example, something as basic as **forgetting the border radius on half of an option selector** can slip through.
+
+Design QA between **Figma and implemented UI** is often:
+
+- slow  
+- manual  
+- inconsistent  
+
+These issues are usually minor, but they create unnecessary back-and-forth between designers and developers.
+
+---
+
+## Solution
+
+I built a small **CLI / GitHub tool** that automatically checks implemented UI against a Figma frame.
+
+The tool:
+
+1. Takes a **Figma frame link**
+2. **Renders the current UI locally**
+3. Extracts **layout and style data** from both the design and the rendered page
+4. Compares them using a set of **deterministic rules**
+5. Reports **simple design mismatches**
+
+### Examples of issues it detects
+
+- font size mismatches  
+- incorrect font weights  
+- incorrect button heights  
+- border radius differences  
+- missing text elements  
+
+Instead of waiting for manual design review, developers can run a command and **immediately see small design errors before pushing their code**.
+
+---
+
+## AI Assist
+
+I purposely targeted a problem that AI currently struggles with, since I myself have been frustrated with the small errors made during execution. I'm a front end dev and designer mostly, so built something that I A) have never built (so cool!) and B) that would help me simplify my AI flow so Im not asking it to fix designs over and over but can instead pass it one big command to fix a good chunk of the issues.
+
+## How AI Helped Build This in Under 3 Hours
+
+I used AI as a **force multiplier for the parts of software development that are high-effort but low-creativity**, while staying involved in the decisions that required judgment, product sense, or tradeoffs.
+
+### What AI Did Well
+
+**Rapid scaffolding**
+
+AI generated the initial project structure — including the Figma client, DOM extraction layer, rule engine, and reporting system. Writing that foundation manually would have taken hours, but AI produced a working baseline almost immediately.
+
+**Fast iteration on features**
+
+Once the pattern for a design check existed, AI could quickly replicate it. Adding additional rules like spacing checks, color comparisons, or accessibility checks became very fast because the structure was already in place.
+
+**Handling repetitive boilerplate**
+
+AI handled a lot of the mechanical work developers typically dislike writing:
+
+- GitHub Actions workflow files  
+- TypeScript types  
+- README documentation  
+- small refactors and helper utilities  
+
+This freed me to focus on the core logic rather than setup and formatting.
+
+**Applying known APIs quickly**
+
+AI was able to apply several APIs and tools without requiring me to dig through documentation first, including:
+
+- Figma REST API
+- Playwright DOM extraction
+- WCAG contrast calculations
+- Anthropic/Claude SDK patterns
+
+That made the initial build much faster.
+
+### Where I Had to Step In
+
+**Product and business logic**
+
+AI can generate code, but it doesn't inherently understand the product context. For example, I had to identify that some checks were too noisy — such as ignoring composed text like date ranges — and then guide AI on how the rule should behave.
+
+**Debugging edge cases**
+
+When issues came up (such as CI permission problems), AI initially suggested incorrect fixes. I had to investigate, test, and guide the debugging process until the real root cause was identified.
+
+**Scope control**
+
+AI naturally tends to expand scope. I had to make deliberate product decisions about what the tool should *not* do yet — such as removing certain layout checks that were too noisy or complex for the prototype.
+
+**Direction and sequencing**
+
+AI was most effective when given clear direction at each step. The overall workflow — building the CLI, condensing the architecture, modernizing the structure, adding CI, introducing AI output, and exploring auto-fix capabilities — came from my planning. AI primarily accelerated execution of each step.
+
+### My good friend Claude said this:
+
+"The honest summary:
+You did the product thinking. I did the typing. The 3 hours came from the fact that you never had to context-switch into documentation, never had to remember boilerplate syntax, and could treat each feature as a one-sentence instruction rather than an hour of implementation. The mistakes that slowed you down were almost all mine — wrong assumptions about permissions, stale references after a refactor — and they cost you maybe 20 minutes combined."
+
+
+---
+
+## Tradeoffs
+
+The prototype optimizes for speed of validation, not completeness.
+
+### 1. Limited comparison scope
+
+The prototype only checks a few properties:
+
+- text presence
+- font size
+- font weight
+- container size
+- border radius
+
+It does not attempt full layout validation, nor does it handle many edge cases or advanced styling things like responsive layouts and dynamic rendering. 
+
+However, the above are things that are very tedious to check for a designer, and easily fixed so still provides some value despite the limited scope. 
+
+### 2. Simplified element matching
+
+The prototype primarily matches elements by:
+
+- identical text
+- approximate size
+
+This works for headings and buttons but for items that are dynamic, this may not work perfectly. Ideally, there would be a more advanced method of scanning the generated ui and comparing it to the figma prototype with a bit more fuzziness.
+
+---
 
 ## What it checks
 
@@ -89,8 +238,11 @@ node dist/cli/index.js --figma <figma-url> [--url <page-url> | --route <path>] [
 | `--output <dir>` | `./artifacts` | Directory to save debug artifacts |
 | `--condensed` | off | One line per finding, no detailed breakdown |
 | `--markdown` | off | GitHub-flavored markdown output (for PR comments) |
+| `--prompt` | off | Output a copyable AI prompt with exact CSS fix instructions |
 | `--json` | off | JSON output (for CI pipelines or scripting) |
 | `--verbose` | off | Show detailed progress and confidence scores |
+| `--auto-fix` | off | Use Claude to automatically apply CSS fixes (requires `ANTHROPIC_API_KEY`) |
+| `--css <paths...>` | — | CSS file(s) to update when using `--auto-fix` |
 
 ### How to get a Figma frame link
 
@@ -166,6 +318,43 @@ All fields are optional.
 | `borderRadiusDelta` | `2` | Max border-radius difference in px |
 | `spacingDelta` | `4` | Max padding or margin difference in px |
 | `colorDelta` | `10` | Max per-channel color difference (0–255) |
+
+---
+
+## Auto-fix with Claude
+
+The `--auto-fix` flag sends your findings and CSS files to **Claude Opus** and applies the suggested property changes directly to your files.
+
+### Setup
+
+Add `ANTHROPIC_API_KEY` to your `.env` file:
+
+```
+FIGMA_TOKEN=your-figma-token
+ANTHROPIC_API_KEY=your-anthropic-api-key
+```
+
+### Usage
+
+```bash
+node dist/cli/index.js \
+  --figma "https://www.figma.com/design/..." \
+  --url http://localhost:3000 \
+  --auto-fix \
+  --css src/styles/main.css src/styles/components.css
+```
+
+Claude receives all findings and the contents of each CSS file, then applies targeted fixes — changing only the specific properties listed in the report. Each change is printed as a coloured diff:
+
+```
+  ✔  src/styles/main.css
+       .hero h1 { font-size: 24px → 30px }
+       .hero h1 { font-weight: 400 → 700 }
+  ✔  src/styles/components.css
+       .btn { border-radius: 4px → 8px }
+```
+
+`--css` accepts multiple space-separated paths. Use `--verbose` to see skipped changes where the selector or value wasn't found.
 
 ---
 
@@ -324,3 +513,7 @@ npm run build
 # Run built output
 npm start -- --figma "..." --url http://localhost:3000
 ```
+
+
+
+
