@@ -1,0 +1,607 @@
+{
+  "metadata": {
+    "generatedAt": "2026-03-16T19:11:55.186Z",
+    "figmaLink": "https://www.figma.com/design/Fb7aEmeTOrxlW8BzT8vWYj/Untitled?node-id=0-3&t=oTQQW2taUh07jUoL-1",
+    "url": "http://localhost:3000",
+    "summary": {
+      "total": 58,
+      "errors": 6,
+      "warnings": 52,
+      "info": 0
+    }
+  },
+  "findings": [
+    {
+      "id": "734a9873",
+      "severity": "error",
+      "category": "missing-text",
+      "targetName": "Jan 2023 - Present",
+      "expected": "Jan 2023 - Present",
+      "actual": null,
+      "confidence": 0,
+      "message": "Text node \"Jan 2023 - Present\" with content \"Jan 2023 - Present\" was not found on the rendered page."
+    },
+    {
+      "id": "64809390",
+      "severity": "error",
+      "category": "missing-text",
+      "targetName": "Mar 2020 - Dec 2022",
+      "expected": "Mar 2020 - Dec 2022",
+      "actual": null,
+      "confidence": 0,
+      "message": "Text node \"Mar 2020 - Dec 2022\" with content \"Mar 2020 - Dec 2022\" was not found on the rendered page."
+    },
+    {
+      "id": "80d9d984",
+      "severity": "error",
+      "category": "missing-text",
+      "targetName": "Jan 2025 - Mar 2026",
+      "expected": "Jan 2025 - Mar 2026",
+      "actual": null,
+      "confidence": 0,
+      "message": "Text node \"Jan 2025 - Mar 2026\" with content \"Jan 2025 - Mar 2026\" was not found on the rendered page."
+    },
+    {
+      "id": "51dd3383",
+      "severity": "error",
+      "category": "missing-text",
+      "targetName": "Aug 2024 - Dec 2024",
+      "expected": "Aug 2024 - Dec 2024",
+      "actual": null,
+      "confidence": 0,
+      "message": "Text node \"Aug 2024 - Dec 2024\" with content \"Aug 2024 - Dec 2024\" was not found on the rendered page."
+    },
+    {
+      "id": "fd9b080d",
+      "severity": "error",
+      "category": "missing-text",
+      "targetName": "Mar 2024 - Jul 2024",
+      "expected": "Mar 2024 - Jul 2024",
+      "actual": null,
+      "confidence": 0,
+      "message": "Text node \"Mar 2024 - Jul 2024\" with content \"Mar 2024 - Jul 2024\" was not found on the rendered page."
+    },
+    {
+      "id": "3038504e",
+      "severity": "error",
+      "category": "missing-text",
+      "targetName": "Nov 2023 - Feb 2024",
+      "expected": "Nov 2023 - Feb 2024",
+      "actual": null,
+      "confidence": 0,
+      "message": "Text node \"Nov 2023 - Feb 2024\" with content \"Nov 2023 - Feb 2024\" was not found on the rendered page."
+    },
+    {
+      "id": "1c9dc738",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Alex Johnson",
+      "expected": 30,
+      "actual": 22,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Alex Johnson\": expected 30px, got 22px (difference: 8.0px, threshold: 2px)."
+    },
+    {
+      "id": "b3ece1f3",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Contact",
+      "expected": 14,
+      "actual": 11,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Contact\": expected 14px, got 11px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "acc77321",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Social",
+      "expected": 14,
+      "actual": 11,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Social\": expected 14px, got 11px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "3855ff0e",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Top Skills",
+      "expected": 14,
+      "actual": 11,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Top Skills\": expected 14px, got 11px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "812c0bba",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Experience",
+      "expected": 24,
+      "actual": 16,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Experience\": expected 24px, got 16px (difference: 8.0px, threshold: 2px)."
+    },
+    {
+      "id": "dac2133b",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Senior Product Designer",
+      "expected": 18,
+      "actual": 14,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Senior Product Designer\": expected 18px, got 14px (difference: 4.0px, threshold: 2px)."
+    },
+    {
+      "id": "45816de2",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "TechFlow Inc. • San Francisco, CA",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"TechFlow Inc. • San Francisco, CA\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "3468ed37",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Leading design initiatives for enterprise SaaS pro",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Leading design initiatives for enterprise SaaS pro\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "c8eeb037",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Product Designer",
+      "expected": 18,
+      "actual": 14,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Product Designer\": expected 18px, got 14px (difference: 4.0px, threshold: 2px)."
+    },
+    {
+      "id": "de27858e",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "DigitalCraft • San Francisco, CA",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"DigitalCraft • San Francisco, CA\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "9dcc28dd",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Designed end-to-end user experiences for mobile an",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Designed end-to-end user experiences for mobile an\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "51366b20",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "UX Designer",
+      "expected": 18,
+      "actual": 14,
+      "confidence": 1,
+      "message": "Font size mismatch on \"UX Designer\": expected 18px, got 14px (difference: 4.0px, threshold: 2px)."
+    },
+    {
+      "id": "ebee0793",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "StartupHub • San Jose, CA",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"StartupHub • San Jose, CA\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "ad2ab07f",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Conducted user research and usability testing to i",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Conducted user research and usability testing to i\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "40fc4fb3",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Education",
+      "expected": 24,
+      "actual": 16,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Education\": expected 24px, got 16px (difference: 8.0px, threshold: 2px)."
+    },
+    {
+      "id": "27c1b3df",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Master of Design",
+      "expected": 18,
+      "actual": 14,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Master of Design\": expected 18px, got 14px (difference: 4.0px, threshold: 2px)."
+    },
+    {
+      "id": "57a3b6ea",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Stanford University • Stanford, CA",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Stanford University • Stanford, CA\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "b7623032",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Specialized in Human-Computer Interaction and Desi",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Specialized in Human-Computer Interaction and Desi\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "98c69583",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Bachelor of Fine Arts",
+      "expected": 18,
+      "actual": 14,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Bachelor of Fine Arts\": expected 18px, got 14px (difference: 4.0px, threshold: 2px)."
+    },
+    {
+      "id": "8a6e9886",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Rhode Island School of Design • Providence, RI",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Rhode Island School of Design • Providence, RI\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "6ff2272d",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Major in Graphic Design with honors",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Major in Graphic Design with honors\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "842a8eea",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Featured Projects",
+      "expected": 24,
+      "actual": 18,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Featured Projects\": expected 24px, got 18px (difference: 6.0px, threshold: 2px)."
+    },
+    {
+      "id": "17b25116",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "HealthTrack Mobile App",
+      "expected": 20,
+      "actual": 15,
+      "confidence": 1,
+      "message": "Font size mismatch on \"HealthTrack Mobile App\": expected 20px, got 15px (difference: 5.0px, threshold: 2px)."
+    },
+    {
+      "id": "68d95392",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "A comprehensive health and fitness tracking applic",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"A comprehensive health and fitness tracking applic\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "4cb8d8f1",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Analytics Dashboard Redesign",
+      "expected": 20,
+      "actual": 15,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Analytics Dashboard Redesign\": expected 20px, got 15px (difference: 5.0px, threshold: 2px)."
+    },
+    {
+      "id": "2c6d9c88",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Complete overhaul of a B2B analytics platform, foc",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Complete overhaul of a B2B analytics platform, foc\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "e004b7ae",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "E-Commerce Platform",
+      "expected": 20,
+      "actual": 15,
+      "confidence": 1,
+      "message": "Font size mismatch on \"E-Commerce Platform\": expected 20px, got 15px (difference: 5.0px, threshold: 2px)."
+    },
+    {
+      "id": "a1c1ccf8",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Modern shopping experience for a fashion retail br",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Modern shopping experience for a fashion retail br\": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "53d21b53",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Brand Identity System",
+      "expected": 20,
+      "actual": 15,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Brand Identity System\": expected 20px, got 15px (difference: 5.0px, threshold: 2px)."
+    },
+    {
+      "id": "2547fc2c",
+      "severity": "warning",
+      "category": "font-size",
+      "targetName": "Developed a comprehensive design system and brand ",
+      "expected": 16,
+      "actual": 13,
+      "confidence": 1,
+      "message": "Font size mismatch on \"Developed a comprehensive design system and brand \": expected 16px, got 13px (difference: 3.0px, threshold: 2px)."
+    },
+    {
+      "id": "5332dd62",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "Alex Johnson",
+      "expected": 500,
+      "actual": 700,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"Alex Johnson\": expected 500, got 700 (difference: 200, threshold: 100)."
+    },
+    {
+      "id": "468a8007",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "Senior Product Designer",
+      "expected": 400,
+      "actual": 600,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"Senior Product Designer\": expected 400, got 600 (difference: 200, threshold: 100)."
+    },
+    {
+      "id": "f9616e4f",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "2,847",
+      "expected": 400,
+      "actual": 700,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"2,847\": expected 400, got 700 (difference: 300, threshold: 100)."
+    },
+    {
+      "id": "197b334c",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "523",
+      "expected": 400,
+      "actual": 700,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"523\": expected 400, got 700 (difference: 300, threshold: 100)."
+    },
+    {
+      "id": "f814b239",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "156",
+      "expected": 400,
+      "actual": 700,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"156\": expected 400, got 700 (difference: 300, threshold: 100)."
+    },
+    {
+      "id": "b1b787ac",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "Experience",
+      "expected": 500,
+      "actual": 700,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"Experience\": expected 500, got 700 (difference: 200, threshold: 100)."
+    },
+    {
+      "id": "730417ba",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "Education",
+      "expected": 500,
+      "actual": 700,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"Education\": expected 500, got 700 (difference: 200, threshold: 100)."
+    },
+    {
+      "id": "1db2f440",
+      "severity": "warning",
+      "category": "font-weight",
+      "targetName": "Featured Projects",
+      "expected": 500,
+      "actual": 700,
+      "confidence": 1,
+      "message": "Font weight mismatch on \"Featured Projects\": expected 500, got 700 (difference: 200, threshold: 100)."
+    },
+    {
+      "id": "ca8e28c9",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "App",
+      "expected": "padding-top: 32px",
+      "actual": "padding-top: 24px",
+      "confidence": 0.5523264555651498,
+      "message": "Padding mismatch on \"App\": padding-top expected 32px, got 24px (diff: 8px, threshold: ±4px)."
+    },
+    {
+      "id": "3056b457",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "App",
+      "expected": "padding-right: 32px",
+      "actual": "padding-right: 16px",
+      "confidence": 0.5523264555651498,
+      "message": "Padding mismatch on \"App\": padding-right expected 32px, got 16px (diff: 16px, threshold: ±4px)."
+    },
+    {
+      "id": "63abaa45",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "App",
+      "expected": "padding-bottom: 32px",
+      "actual": "padding-bottom: 64px",
+      "confidence": 0.5523264555651498,
+      "message": "Padding mismatch on \"App\": padding-bottom expected 32px, got 64px (diff: 32px, threshold: ±4px)."
+    },
+    {
+      "id": "6c09ef86",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "App",
+      "expected": "padding-left: 32px",
+      "actual": "padding-left: 16px",
+      "confidence": 0.5523264555651498,
+      "message": "Padding mismatch on \"App\": padding-left expected 32px, got 16px (diff: 16px, threshold: ±4px)."
+    },
+    {
+      "id": "60f29e8d",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "App",
+      "expected": "margin-right: 0px",
+      "actual": "margin-right: 290px",
+      "confidence": 0.5523264555651498,
+      "message": "Unexpected margin on \"App\": margin-right is 290px but the Figma design uses no margins (threshold: ±4px)."
+    },
+    {
+      "id": "8c95e8f3",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "App",
+      "expected": "margin-left: 0px",
+      "actual": "margin-left: 290px",
+      "confidence": 0.5523264555651498,
+      "message": "Unexpected margin on \"App\": margin-left is 290px but the Figma design uses no margins (threshold: ±4px)."
+    },
+    {
+      "id": "b2df126c",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "Container",
+      "expected": "padding-top: 32px",
+      "actual": "padding-top: 0px",
+      "confidence": 0.6074068149495989,
+      "message": "Padding mismatch on \"Container\": padding-top expected 32px, got 0px (diff: 32px, threshold: ±4px)."
+    },
+    {
+      "id": "83a4f24b",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "Container",
+      "expected": "padding-bottom: 32px",
+      "actual": "padding-bottom: 0px",
+      "confidence": 0.6074068149495989,
+      "message": "Padding mismatch on \"Container\": padding-bottom expected 32px, got 0px (diff: 32px, threshold: ±4px)."
+    },
+    {
+      "id": "dd3040c9",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "ProfileHeader",
+      "expected": "padding-top: 16px",
+      "actual": "padding-top: 0px",
+      "confidence": 0.5686862942385931,
+      "message": "Padding mismatch on \"ProfileHeader\": padding-top expected 16px, got 0px (diff: 16px, threshold: ±4px)."
+    },
+    {
+      "id": "e252415a",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "ProfileHeader",
+      "expected": "padding-bottom: 16px",
+      "actual": "padding-bottom: 0px",
+      "confidence": 0.5686862942385931,
+      "message": "Padding mismatch on \"ProfileHeader\": padding-bottom expected 16px, got 0px (diff: 16px, threshold: ±4px)."
+    },
+    {
+      "id": "3e31d305",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "Container",
+      "expected": "padding-bottom: 0px",
+      "actual": "padding-bottom: 28px",
+      "confidence": 0.5522026178077459,
+      "message": "Padding mismatch on \"Container\": padding-bottom expected 0px, got 28px (diff: 28px, threshold: ±4px)."
+    },
+    {
+      "id": "a8c8829f",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "Card",
+      "expected": "padding-right: 0px",
+      "actual": "padding-right: 24px",
+      "confidence": 0.33772819472616633,
+      "message": "Padding mismatch on \"Card\": padding-right expected 0px, got 24px (diff: 24px, threshold: ±4px)."
+    },
+    {
+      "id": "58efbb41",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "Card",
+      "expected": "padding-right: 0px",
+      "actual": "padding-right: 24px",
+      "confidence": 0.44153005464480877,
+      "message": "Padding mismatch on \"Card\": padding-right expected 0px, got 24px (diff: 24px, threshold: ±4px)."
+    },
+    {
+      "id": "28b4622e",
+      "severity": "warning",
+      "category": "spacing",
+      "targetName": "Card",
+      "expected": "padding-bottom: 0px",
+      "actual": "padding-bottom: 24px",
+      "confidence": 0.44153005464480877,
+      "message": "Padding mismatch on \"Card\": padding-bottom expected 0px, got 24px (diff: 24px, threshold: ±4px)."
+    }
+  ],
+  "design": {
+    "rootNode": {
+      "id": "0:3",
+      "name": "Profile page app",
+      "type": "FRAME",
+      "width": 1302,
+      "height": 2503
+    }
+  },
+  "rendered": {
+    "nodeCount": 134
+  }
+}

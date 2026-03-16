@@ -1,0 +1,3424 @@
+[
+  {
+    "selector": "div.page-wrapper",
+    "tag": "div",
+    "x": 290,
+    "y": 0,
+    "width": 860,
+    "height": 2093,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 24,
+      "right": 16,
+      "bottom": 64,
+      "left": 16
+    },
+    "margin": {
+      "top": 0,
+      "right": 290,
+      "bottom": 0,
+      "left": 290
+    }
+  },
+  {
+    "selector": "div.profile-card",
+    "tag": "div",
+    "x": 306,
+    "y": 24,
+    "width": 828,
+    "height": 595,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "12px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.profile-banner",
+    "tag": "div",
+    "x": 307,
+    "y": 25,
+    "width": 826,
+    "height": 120,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.profile-body",
+    "tag": "div",
+    "x": 307,
+    "y": 101,
+    "width": 826,
+    "height": 517,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 28,
+      "bottom": 28,
+      "left": 28
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.profile-top-row",
+    "tag": "div",
+    "x": 335,
+    "y": 101,
+    "width": 770,
+    "height": 88,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": -44,
+      "right": 0,
+      "bottom": 16,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.profile-actions",
+    "tag": "div",
+    "x": 893,
+    "y": 149,
+    "width": 212,
+    "height": 40,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 4,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "button.btn",
+    "tag": "button",
+    "text": "Message",
+    "x": 893,
+    "y": 149,
+    "width": 107,
+    "height": 36,
+    "fontSize": 13,
+    "fontWeight": "500",
+    "color": "rgb(51, 51, 51)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "8px",
+    "padding": {
+      "top": 0,
+      "right": 16,
+      "bottom": 0,
+      "left": 16
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "button.btn",
+    "tag": "button",
+    "text": "Edit Profile",
+    "x": 1010,
+    "y": 149,
+    "width": 95,
+    "height": 36,
+    "fontSize": 13,
+    "fontWeight": "500",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(17, 17, 17)",
+    "borderRadius": "8px",
+    "padding": {
+      "top": 0,
+      "right": 16,
+      "bottom": 0,
+      "left": 16
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.profile-info",
+    "tag": "div",
+    "x": 335,
+    "y": 205,
+    "width": 770,
+    "height": 129,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h1.profile-name",
+    "tag": "h1",
+    "text": "Alex Johnson",
+    "x": 335,
+    "y": 205,
+    "width": 770,
+    "height": 26,
+    "fontSize": 22,
+    "fontWeight": "700",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 3,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.profile-title",
+    "tag": "p",
+    "text": "Senior Product Designer",
+    "x": 335,
+    "y": 234,
+    "width": 770,
+    "height": 17,
+    "fontSize": 14,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.profile-bio",
+    "tag": "p",
+    "text": "Passionate about creating intuitive and beautiful user experiences. Love exploring the intersection of design, technology, and human behavior.",
+    "x": 335,
+    "y": 261,
+    "width": 560,
+    "height": 45,
+    "fontSize": 14,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 12,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.profile-meta",
+    "tag": "div",
+    "x": 335,
+    "y": 318,
+    "width": 770,
+    "height": 16,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.meta-item",
+    "tag": "span",
+    "text": "San Francisco, CA",
+    "x": 335,
+    "y": 318,
+    "width": 129,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.meta-item",
+    "tag": "span",
+    "text": "Joined March 2022",
+    "x": 484,
+    "y": 318,
+    "width": 136,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.info-row",
+    "tag": "div",
+    "x": 335,
+    "y": 354,
+    "width": 770,
+    "height": 138,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(229, 229, 229)",
+    "borderRadius": "8px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 20,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.info-box",
+    "tag": "div",
+    "x": 336,
+    "y": 355,
+    "width": 225,
+    "height": 136,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 16,
+      "right": 18,
+      "bottom": 16,
+      "left": 18
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.info-box-label",
+    "tag": "p",
+    "text": "Contact",
+    "x": 354,
+    "y": 371,
+    "width": 189,
+    "height": 13,
+    "fontSize": 11,
+    "fontWeight": "600",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "ul.contact-list",
+    "tag": "ul",
+    "x": 354,
+    "y": 394,
+    "width": 189,
+    "height": 62,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "li",
+    "tag": "li",
+    "text": "alex.johnson@email.com",
+    "x": 354,
+    "y": 394,
+    "width": 189,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "li",
+    "tag": "li",
+    "text": "+1 (555) 123-4567",
+    "x": 354,
+    "y": 417,
+    "width": 189,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "li",
+    "tag": "li",
+    "text": "alexjohnson.design",
+    "x": 354,
+    "y": 440,
+    "width": 189,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.info-box",
+    "tag": "div",
+    "x": 562,
+    "y": 355,
+    "width": 225,
+    "height": 136,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 16,
+      "right": 18,
+      "bottom": 16,
+      "left": 18
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.info-box-label",
+    "tag": "p",
+    "text": "Social",
+    "x": 580,
+    "y": 371,
+    "width": 189,
+    "height": 13,
+    "fontSize": 11,
+    "fontWeight": "600",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.social-icons",
+    "tag": "div",
+    "x": 580,
+    "y": 394,
+    "width": 189,
+    "height": 32,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 4,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "a.social-icon",
+    "tag": "a",
+    "x": 580,
+    "y": 394,
+    "width": 32,
+    "height": 32,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "6px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "a.social-icon",
+    "tag": "a",
+    "x": 622,
+    "y": 394,
+    "width": 32,
+    "height": 32,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "6px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "a.social-icon",
+    "tag": "a",
+    "x": 664,
+    "y": 394,
+    "width": 32,
+    "height": 32,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "6px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.info-box",
+    "tag": "div",
+    "x": 789,
+    "y": 355,
+    "width": 315,
+    "height": 136,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 16,
+      "right": 18,
+      "bottom": 16,
+      "left": 18
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.info-box-label",
+    "tag": "p",
+    "text": "Top Skills",
+    "x": 807,
+    "y": 371,
+    "width": 279,
+    "height": 13,
+    "fontSize": 11,
+    "fontWeight": "600",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.skills-list",
+    "tag": "div",
+    "x": 807,
+    "y": 394,
+    "width": 279,
+    "height": 81,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.skill-tag",
+    "tag": "span",
+    "text": "UI/UX Design",
+    "x": 807,
+    "y": 394,
+    "width": 97,
+    "height": 23,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.skill-tag",
+    "tag": "span",
+    "text": "Product Strategy",
+    "x": 910,
+    "y": 394,
+    "width": 118,
+    "height": 23,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.skill-tag",
+    "tag": "span",
+    "text": "Figma",
+    "x": 807,
+    "y": 423,
+    "width": 56,
+    "height": 23,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.skill-tag",
+    "tag": "span",
+    "text": "Adobe Creative Suite",
+    "x": 869,
+    "y": 423,
+    "width": 141,
+    "height": 23,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.skill-tag",
+    "tag": "span",
+    "text": "Design Systems",
+    "x": 807,
+    "y": 452,
+    "width": 113,
+    "height": 23,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.skill-tag",
+    "tag": "span",
+    "text": "User Research",
+    "x": 925,
+    "y": 452,
+    "width": 104,
+    "height": 23,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(68, 68, 68)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.stats-row",
+    "tag": "div",
+    "x": 335,
+    "y": 508,
+    "width": 770,
+    "height": 82,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "8px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 16,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.stat-item",
+    "tag": "div",
+    "x": 336,
+    "y": 509,
+    "width": 255,
+    "height": 80,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 18,
+      "right": 0,
+      "bottom": 18,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.stat-number",
+    "tag": "span",
+    "text": "2,847",
+    "x": 433,
+    "y": 527,
+    "width": 61,
+    "height": 26,
+    "fontSize": 22,
+    "fontWeight": "700",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.stat-label",
+    "tag": "span",
+    "text": "Followers",
+    "x": 437,
+    "y": 556,
+    "width": 54,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 3,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.stat-divider",
+    "tag": "div",
+    "x": 591,
+    "y": 529,
+    "width": 1,
+    "height": 40,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(229, 229, 229)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.stat-item",
+    "tag": "div",
+    "x": 592,
+    "y": 509,
+    "width": 255,
+    "height": 80,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 18,
+      "right": 0,
+      "bottom": 18,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.stat-number",
+    "tag": "span",
+    "text": "523",
+    "x": 699,
+    "y": 527,
+    "width": 41,
+    "height": 26,
+    "fontSize": 22,
+    "fontWeight": "700",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.stat-label",
+    "tag": "span",
+    "text": "Following",
+    "x": 693,
+    "y": 556,
+    "width": 53,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 3,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.stat-divider",
+    "tag": "div",
+    "x": 848,
+    "y": 529,
+    "width": 1,
+    "height": 40,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(229, 229, 229)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.stat-item",
+    "tag": "div",
+    "x": 849,
+    "y": 509,
+    "width": 255,
+    "height": 80,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 18,
+      "right": 0,
+      "bottom": 18,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.stat-number",
+    "tag": "span",
+    "text": "156",
+    "x": 957,
+    "y": 527,
+    "width": 39,
+    "height": 26,
+    "fontSize": 22,
+    "fontWeight": "700",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.stat-label",
+    "tag": "span",
+    "text": "Posts",
+    "x": 961,
+    "y": 556,
+    "width": 31,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 3,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.two-col-row",
+    "tag": "div",
+    "x": 306,
+    "y": 639,
+    "width": 828,
+    "height": 544,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.card",
+    "tag": "div",
+    "x": 306,
+    "y": 639,
+    "width": 404,
+    "height": 544,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "12px",
+    "padding": {
+      "top": 24,
+      "right": 24,
+      "bottom": 24,
+      "left": 24
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h2.card-title",
+    "tag": "h2",
+    "text": "Experience",
+    "x": 331,
+    "y": 664,
+    "width": 354,
+    "height": 18,
+    "fontSize": 16,
+    "fontWeight": "700",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 20,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline",
+    "tag": "div",
+    "x": 331,
+    "y": 702,
+    "width": 354,
+    "height": 456,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-item",
+    "tag": "div",
+    "x": 331,
+    "y": 702,
+    "width": 354,
+    "height": 139,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-icon",
+    "tag": "div",
+    "x": 331,
+    "y": 707,
+    "width": 10,
+    "height": 10,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(59, 130, 246)",
+    "borderRadius": "50%",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 5,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-content",
+    "tag": "div",
+    "x": 353,
+    "y": 702,
+    "width": 332,
+    "height": 139,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.job-title",
+    "tag": "h3",
+    "text": "Senior Product Designer",
+    "x": 353,
+    "y": 702,
+    "width": 332,
+    "height": 17,
+    "fontSize": 14,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-company",
+    "tag": "p",
+    "text": "TechFlow Inc. • San Francisco, CA",
+    "x": 353,
+    "y": 721,
+    "width": 332,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-dates",
+    "tag": "p",
+    "text": "Jan 2023 – Present",
+    "x": 353,
+    "y": 739,
+    "width": 332,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(153, 153, 153)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-desc",
+    "tag": "p",
+    "text": "Leading design initiatives for enterprise SaaS products, managing a team of 4 designers, and establishing design system standards across the organization.",
+    "x": 353,
+    "y": 760,
+    "width": 332,
+    "height": 81,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-item",
+    "tag": "div",
+    "x": 331,
+    "y": 861,
+    "width": 354,
+    "height": 139,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-icon",
+    "tag": "div",
+    "x": 331,
+    "y": 866,
+    "width": 10,
+    "height": 10,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(59, 130, 246)",
+    "borderRadius": "50%",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 5,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-content",
+    "tag": "div",
+    "x": 353,
+    "y": 861,
+    "width": 332,
+    "height": 139,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.job-title",
+    "tag": "h3",
+    "text": "Product Designer",
+    "x": 353,
+    "y": 861,
+    "width": 332,
+    "height": 17,
+    "fontSize": 14,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-company",
+    "tag": "p",
+    "text": "DigitalCraft • San Francisco, CA",
+    "x": 353,
+    "y": 880,
+    "width": 332,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-dates",
+    "tag": "p",
+    "text": "Mar 2020 – Dec 2022",
+    "x": 353,
+    "y": 898,
+    "width": 332,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(153, 153, 153)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-desc",
+    "tag": "p",
+    "text": "Designed end-to-end user experiences for mobile and web applications. Collaborated with cross-functional teams to deliver high-impact features that increased user engagement by 40%.",
+    "x": 353,
+    "y": 919,
+    "width": 332,
+    "height": 81,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-item",
+    "tag": "div",
+    "x": 331,
+    "y": 1019,
+    "width": 354,
+    "height": 139,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-icon",
+    "tag": "div",
+    "x": 331,
+    "y": 1024,
+    "width": 10,
+    "height": 10,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(59, 130, 246)",
+    "borderRadius": "50%",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 5,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-content",
+    "tag": "div",
+    "x": 353,
+    "y": 1019,
+    "width": 332,
+    "height": 139,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.job-title",
+    "tag": "h3",
+    "text": "UX Designer",
+    "x": 353,
+    "y": 1019,
+    "width": 332,
+    "height": 17,
+    "fontSize": 14,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-company",
+    "tag": "p",
+    "text": "StartupHub • San Jose, CA",
+    "x": 353,
+    "y": 1038,
+    "width": 332,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-dates",
+    "tag": "p",
+    "text": "Jun 2018 – Feb 2020",
+    "x": 353,
+    "y": 1056,
+    "width": 332,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(153, 153, 153)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-desc",
+    "tag": "p",
+    "text": "Conducted user research and usability testing to inform product decisions. Created wireframes, prototypes, and high-fidelity designs for various client projects.",
+    "x": 353,
+    "y": 1077,
+    "width": 332,
+    "height": 81,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.card",
+    "tag": "div",
+    "x": 730,
+    "y": 639,
+    "width": 404,
+    "height": 544,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "12px",
+    "padding": {
+      "top": 24,
+      "right": 24,
+      "bottom": 24,
+      "left": 24
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h2.card-title",
+    "tag": "h2",
+    "text": "Education",
+    "x": 755,
+    "y": 664,
+    "width": 354,
+    "height": 18,
+    "fontSize": 16,
+    "fontWeight": "700",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 20,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline",
+    "tag": "div",
+    "x": 755,
+    "y": 702,
+    "width": 354,
+    "height": 196,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-item",
+    "tag": "div",
+    "x": 755,
+    "y": 702,
+    "width": 354,
+    "height": 98,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-icon",
+    "tag": "div",
+    "x": 755,
+    "y": 707,
+    "width": 10,
+    "height": 10,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(139, 92, 246)",
+    "borderRadius": "50%",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 5,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-content",
+    "tag": "div",
+    "x": 777,
+    "y": 702,
+    "width": 332,
+    "height": 98,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.job-title",
+    "tag": "h3",
+    "text": "Master of Design",
+    "x": 777,
+    "y": 702,
+    "width": 332,
+    "height": 17,
+    "fontSize": 14,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-company",
+    "tag": "p",
+    "text": "Stanford University • Stanford, CA",
+    "x": 777,
+    "y": 721,
+    "width": 332,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-dates",
+    "tag": "p",
+    "text": "2018",
+    "x": 777,
+    "y": 739,
+    "width": 332,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(153, 153, 153)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-desc",
+    "tag": "p",
+    "text": "Specialized in Human-Computer Interaction and Design Thinking",
+    "x": 777,
+    "y": 760,
+    "width": 332,
+    "height": 40,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-item",
+    "tag": "div",
+    "x": 755,
+    "y": 820,
+    "width": 354,
+    "height": 78,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-icon",
+    "tag": "div",
+    "x": 755,
+    "y": 825,
+    "width": 10,
+    "height": 10,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(139, 92, 246)",
+    "borderRadius": "50%",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 5,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.timeline-content",
+    "tag": "div",
+    "x": 777,
+    "y": 820,
+    "width": 332,
+    "height": 78,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.job-title",
+    "tag": "h3",
+    "text": "Bachelor of Fine Arts",
+    "x": 777,
+    "y": 820,
+    "width": 332,
+    "height": 17,
+    "fontSize": 14,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-company",
+    "tag": "p",
+    "text": "Rhode Island School of Design • Providence, RI",
+    "x": 777,
+    "y": 839,
+    "width": 332,
+    "height": 16,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(102, 102, 102)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 2,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-dates",
+    "tag": "p",
+    "text": "2016",
+    "x": 777,
+    "y": 857,
+    "width": 332,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(153, 153, 153)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.job-desc",
+    "tag": "p",
+    "text": "Major in Graphic Design with honors",
+    "x": 777,
+    "y": 878,
+    "width": 332,
+    "height": 20,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "section.projects-section",
+    "tag": "section",
+    "x": 306,
+    "y": 1203,
+    "width": 828,
+    "height": 826,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h2.section-title",
+    "tag": "h2",
+    "text": "Featured Projects",
+    "x": 306,
+    "y": 1203,
+    "width": 828,
+    "height": 21,
+    "fontSize": 18,
+    "fontWeight": "700",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 16,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.projects-grid",
+    "tag": "div",
+    "x": 306,
+    "y": 1240,
+    "width": 828,
+    "height": 789,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-card",
+    "tag": "div",
+    "x": 306,
+    "y": 1240,
+    "width": 404,
+    "height": 385,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "12px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-image",
+    "tag": "div",
+    "x": 307,
+    "y": 1241,
+    "width": 402,
+    "height": 180,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(26, 26, 46)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-body",
+    "tag": "div",
+    "x": 307,
+    "y": 1421,
+    "width": 402,
+    "height": 203,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 18,
+      "right": 20,
+      "bottom": 20,
+      "left": 20
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.project-title",
+    "tag": "h3",
+    "text": "HealthTrack Mobile App",
+    "x": 327,
+    "y": 1439,
+    "width": 362,
+    "height": 18,
+    "fontSize": 15,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-date",
+    "tag": "p",
+    "text": "Jan 2025 – Mar 2026",
+    "x": 327,
+    "y": 1463,
+    "width": 362,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-desc",
+    "tag": "p",
+    "text": "A comprehensive health and fitness tracking application that helps users monitor their daily activities, nutrition, and wellness goals. Designed with accessibility and user engagement in mind.",
+    "x": 327,
+    "y": 1488,
+    "width": 362,
+    "height": 81,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 14,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-tags",
+    "tag": "div",
+    "x": 327,
+    "y": 1582,
+    "width": 362,
+    "height": 21,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Mobile Design",
+    "x": 327,
+    "y": 1582,
+    "width": 96,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Health & Wellness",
+    "x": 429,
+    "y": 1582,
+    "width": 117,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "User Research",
+    "x": 552,
+    "y": 1582,
+    "width": 98,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-card",
+    "tag": "div",
+    "x": 730,
+    "y": 1240,
+    "width": 404,
+    "height": 385,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "12px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-image",
+    "tag": "div",
+    "x": 731,
+    "y": 1241,
+    "width": 402,
+    "height": 180,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(26, 26, 46)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-body",
+    "tag": "div",
+    "x": 731,
+    "y": 1421,
+    "width": 402,
+    "height": 203,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 18,
+      "right": 20,
+      "bottom": 20,
+      "left": 20
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.project-title",
+    "tag": "h3",
+    "text": "Analytics Dashboard Redesign",
+    "x": 751,
+    "y": 1439,
+    "width": 362,
+    "height": 18,
+    "fontSize": 15,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-date",
+    "tag": "p",
+    "text": "Aug 2024 – Dec 2024",
+    "x": 751,
+    "y": 1463,
+    "width": 362,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-desc",
+    "tag": "p",
+    "text": "Complete overhaul of a B2B analytics platform, focusing on data visualization and user workflow optimization. Increased user satisfaction by 45% and reduced task completion time.",
+    "x": 751,
+    "y": 1488,
+    "width": 362,
+    "height": 81,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 14,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-tags",
+    "tag": "div",
+    "x": 751,
+    "y": 1582,
+    "width": 362,
+    "height": 21,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Web Design",
+    "x": 751,
+    "y": 1582,
+    "width": 85,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Data Visualization",
+    "x": 842,
+    "y": 1582,
+    "width": 116,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "B2B",
+    "x": 964,
+    "y": 1582,
+    "width": 43,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-card",
+    "tag": "div",
+    "x": 306,
+    "y": 1644,
+    "width": 404,
+    "height": 385,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "12px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-image",
+    "tag": "div",
+    "x": 307,
+    "y": 1645,
+    "width": 402,
+    "height": 180,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(26, 26, 46)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-body",
+    "tag": "div",
+    "x": 307,
+    "y": 1825,
+    "width": 402,
+    "height": 203,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 18,
+      "right": 20,
+      "bottom": 20,
+      "left": 20
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.project-title",
+    "tag": "h3",
+    "text": "E-Commerce Platform",
+    "x": 327,
+    "y": 1843,
+    "width": 362,
+    "height": 18,
+    "fontSize": 15,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-date",
+    "tag": "p",
+    "text": "Mar 2024 – Jul 2024",
+    "x": 327,
+    "y": 1867,
+    "width": 362,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-desc",
+    "tag": "p",
+    "text": "Modern shopping experience for a fashion retail brand. Implemented a seamless checkout process and personalized product recommendations that increased conversion rates by 30%.",
+    "x": 327,
+    "y": 1892,
+    "width": 362,
+    "height": 81,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 14,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-tags",
+    "tag": "div",
+    "x": 327,
+    "y": 1987,
+    "width": 362,
+    "height": 21,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "E-Commerce",
+    "x": 327,
+    "y": 1987,
+    "width": 91,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Conversion Optimization",
+    "x": 424,
+    "y": 1987,
+    "width": 151,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Mobile-First",
+    "x": 580,
+    "y": 1987,
+    "width": 85,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-card",
+    "tag": "div",
+    "x": 730,
+    "y": 1644,
+    "width": 404,
+    "height": 385,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "borderRadius": "12px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-image",
+    "tag": "div",
+    "x": 731,
+    "y": 1645,
+    "width": 402,
+    "height": 180,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgb(26, 26, 46)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-body",
+    "tag": "div",
+    "x": 731,
+    "y": 1825,
+    "width": 402,
+    "height": 203,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 18,
+      "right": 20,
+      "bottom": 20,
+      "left": 20
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "h3.project-title",
+    "tag": "h3",
+    "text": "Brand Identity System",
+    "x": 751,
+    "y": 1843,
+    "width": 362,
+    "height": 18,
+    "fontSize": 15,
+    "fontWeight": "600",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 6,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-date",
+    "tag": "p",
+    "text": "Nov 2023 – Feb 2024",
+    "x": 751,
+    "y": 1867,
+    "width": 362,
+    "height": 15,
+    "fontSize": 12,
+    "fontWeight": "400",
+    "color": "rgb(136, 136, 136)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 10,
+      "left": 0
+    }
+  },
+  {
+    "selector": "p.project-desc",
+    "tag": "p",
+    "text": "Developed a comprehensive design system and brand guidelines for a fintech startup. Created reusable components and documentation to ensure consistency across all touchpoints.",
+    "x": 751,
+    "y": 1892,
+    "width": 362,
+    "height": 81,
+    "fontSize": 13,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 14,
+      "left": 0
+    }
+  },
+  {
+    "selector": "div.project-tags",
+    "tag": "div",
+    "x": 751,
+    "y": 1987,
+    "width": 362,
+    "height": 21,
+    "fontSize": 16,
+    "fontWeight": "400",
+    "color": "rgb(17, 17, 17)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "borderRadius": "0px",
+    "padding": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Design Systems",
+    "x": 751,
+    "y": 1987,
+    "width": 106,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Branding",
+    "x": 863,
+    "y": 1987,
+    "width": 69,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  {
+    "selector": "span.project-tag",
+    "tag": "span",
+    "text": "Documentation",
+    "x": 938,
+    "y": 1987,
+    "width": 102,
+    "height": 21,
+    "fontSize": 11,
+    "fontWeight": "400",
+    "color": "rgb(85, 85, 85)",
+    "backgroundColor": "rgb(250, 250, 250)",
+    "borderRadius": "99px",
+    "padding": {
+      "top": 3,
+      "right": 10,
+      "bottom": 3,
+      "left": 10
+    },
+    "margin": {
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    }
+  }
+]

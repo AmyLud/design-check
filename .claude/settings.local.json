@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/amyludwig/Documents/**)",
+      "Read(//Users/amyludwig/**)",
+      "Bash(npm run:*)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
