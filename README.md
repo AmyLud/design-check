@@ -151,6 +151,34 @@ This works for headings and buttons but for items that are dynamic, this may not
 
 ---
 
+## Scaling Up
+
+If I had two weeks to turn this prototype into a **production-ready SaaS used by thousands of teams**, the first priority would be improving reliability, determinism, and integration with developer workflows.
+
+### 1. Introduce Improved Element Mapping
+
+The biggest technical challenge is matching **Figma design elements to DOM elements**.
+
+Right now the prototype relies mostly on text matching, which works for simple cases but can produce false positives in complex layouts.
+
+In production, I would introduce explicit mapping between design and code, most likely using data-attributes to start.
+
+### 2. Move Rendering to a Scalable Browser Service
+
+Currently, rendering happens locally via Playwright.
+
+For a SaaS product, I would move this into a containerized rendering service that runs headless browsers in a controlled environment. 
+
+This would mean consistency, the ability to do parallel PR comparisons, and support for different browsers and viewport sizing.
+
+### 3. Deeper CLI work and automatic integration with AI assistance
+
+Allow for AI systems to run this check themselves and apply fixes, as well as provide options for level of intervention desired. This would follow the other changes, since reliability and the functionality of actual matching is priority.
+
+A nice one to have, and I like lists of 3.
+
+---
+
 ## What it checks
 
 | Check | Severity | Description |

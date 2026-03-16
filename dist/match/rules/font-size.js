@@ -22,6 +22,7 @@ function checkFontSize(matches, thresholds) {
                 expected: designFontSize,
                 actual: renderedFontSize,
                 confidence: match.confidence,
+                selector: renderedNode.selector,
                 message: `Font size mismatch on "${designNode.name}": ` +
                     `expected ${designFontSize}px, got ${renderedFontSize}px ` +
                     `(difference: ${diff.toFixed(1)}px, threshold: ${thresholds.fontSizeDelta}px).`

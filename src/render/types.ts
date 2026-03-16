@@ -13,5 +13,8 @@ export interface RenderedNode {
   borderRadius?: string
   padding?: { top: number; right: number; bottom: number; left: number }
   margin?: { top: number; right: number; bottom: number; left: number }
+  effectiveBackgroundColor?: string
+  imageSrc?: string
+  imageBroken?: boolean
   role?: string
 }

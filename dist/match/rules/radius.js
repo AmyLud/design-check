@@ -28,6 +28,7 @@ function checkRadius(matches, thresholds) {
                     expected: designRadius,
                     actual: 0,
                     confidence: match.confidence,
+                    selector: renderedNode.selector,
                     message: `Border radius mismatch on "${designNode.name}": ` +
                         `expected ${designRadius}px, got 0px (no border-radius detected).`
                 }];
@@ -43,6 +44,7 @@ function checkRadius(matches, thresholds) {
                 expected: designRadius,
                 actual: renderedRadius,
                 confidence: match.confidence,
+                selector: renderedNode.selector,
                 message: `Border radius mismatch on "${designNode.name}": ` +
                     `expected ${designRadius}px, got ${renderedRadius}px ` +
                     `(difference: ${diff.toFixed(1)}px, threshold: ${thresholds.borderRadiusDelta}px).`

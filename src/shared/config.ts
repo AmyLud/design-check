@@ -6,6 +6,7 @@ export interface ThresholdConfig {
   fontWeightTolerance: number
   borderRadiusDelta: number
   spacingDelta: number
+  colorDelta: number
 }
 
 export interface DesignCheckConfig {
@@ -19,7 +20,8 @@ export const DEFAULT_CONFIG: DesignCheckConfig = {
     fontSizeDelta: 2,
     fontWeightTolerance: 100,
     borderRadiusDelta: 2,
-    spacingDelta: 4
+    spacingDelta: 4,
+    colorDelta: 10
   }
 }
 

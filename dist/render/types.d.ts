@@ -23,6 +23,9 @@ export interface RenderedNode {
         bottom: number;
         left: number;
     };
+    effectiveBackgroundColor?: string;
+    imageSrc?: string;
+    imageBroken?: boolean;
     role?: string;
 }
 //# sourceMappingURL=types.d.ts.map

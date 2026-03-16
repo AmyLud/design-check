@@ -13,7 +13,8 @@ exports.DEFAULT_CONFIG = {
         fontSizeDelta: 2,
         fontWeightTolerance: 100,
         borderRadiusDelta: 2,
-        spacingDelta: 4
+        spacingDelta: 4,
+        colorDelta: 10
     }
 };
 function deepMerge(base, override) {

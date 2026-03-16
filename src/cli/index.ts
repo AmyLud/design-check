@@ -11,7 +11,9 @@ import { capturePage } from '../render/capture-page'
 import { compare } from '../match/compare'
 import { printReport, printCondensedReport } from '../report/console-reporter'
 import { formatMarkdownReport } from '../report/markdown-reporter'
+import { formatPromptReport } from '../report/prompt-reporter'
 import { generateJsonReport } from '../report/json-reporter'
+import { autoFix } from '../fix/auto-fix'
 import { loadConfig } from '../shared/config'
 import { parseViewport, ensureDir, saveJson } from '../shared/utils'
 
@@ -30,7 +32,10 @@ program
   .option('--verbose', 'Print detailed progress and confidence scores', false)
   .option('--condensed', 'Print one line per finding with no detailed breakdown', false)
   .option('--markdown', 'Output report as GitHub-flavored markdown (for PR comments)', false)
+  .option('--prompt', 'Output an AI prompt with fix instructions for each finding', false)
   .option('--json', 'Output report as JSON instead of human-readable text', false)
+  .option('--auto-fix', 'Use Claude to automatically apply CSS fixes (requires ANTHROPIC_API_KEY)', false)
+  .option('--css <paths...>', 'CSS file path(s) to update when using --auto-fix')
   .addHelpText(
     'after',
     `
@@ -68,18 +73,27 @@ async function main(): Promise<void> {
     verbose: boolean
     condensed: boolean
     markdown: boolean
+    prompt: boolean
     json: boolean
+    autoFix: boolean
+    css?: string[]
   }>()
 
   const isJson = opts.json
   const isVerbose = opts.verbose
   const isCondensed = opts.condensed
   const isMarkdown = opts.markdown
+  const isPrompt = opts.prompt
+  const isAutoFix = opts.autoFix
 
-  // ── 1. Validate that either --url or --route is provided ──────────────────────
+  // ── 1. Validate inputs ────────────────────────────────────────────────────────
 
   if (!opts.url && !opts.route) {
     fatal('You must provide either --url <local-url> or --route <path>.')
+  }
+
+  if (isAutoFix && (!opts.css || opts.css.length === 0)) {
+    fatal('--auto-fix requires --css <path(s)> to specify which CSS files to update.')
   }
 
   // ── 2. Determine target URL ───────────────────────────────────────────────────
@@ -217,13 +231,31 @@ async function main(): Promise<void> {
     console.log(JSON.stringify(jsonReport, null, 2))
   } else if (isMarkdown) {
     console.log(formatMarkdownReport(findings!, opts.figma, targetUrl))
+  } else if (isPrompt) {
+    console.log(formatPromptReport(findings!, opts.figma, targetUrl))
   } else if (isCondensed) {
     printCondensedReport(findings!)
   } else {
     printReport(findings!, opts.figma, targetUrl, outputDir, isVerbose)
   }
 
-  // ── 12. Exit code ─────────────────────────────────────────────────────────────
+  // ── 12. Auto-fix ──────────────────────────────────────────────────────────────
+
+  if (isAutoFix && findings!.length > 0) {
+    try {
+      await autoFix({
+        cssPaths: opts.css!,
+        findings: findings!,
+        figmaLink: opts.figma,
+        url: targetUrl,
+        verbose: isVerbose,
+      })
+    } catch (err) {
+      fatal(`Auto-fix failed: ${(err as Error).message}`)
+    }
+  }
+
+  // ── 13. Exit code ─────────────────────────────────────────────────────────────
 
   const hasErrors = findings!.some((f) => f.severity === 'error')
   process.exit(hasErrors ? 1 : 0)

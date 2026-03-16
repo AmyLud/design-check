@@ -1,5 +1,5 @@
 export type FindingSeverity = 'info' | 'warning' | 'error';
-export type FindingCategory = 'missing-text' | 'font-size' | 'font-weight' | 'radius' | 'spacing';
+export type FindingCategory = 'missing-text' | 'font-size' | 'font-weight' | 'radius' | 'spacing' | 'color' | 'contrast' | 'broken-image';
 export interface Finding {
     id: string;
     severity: FindingSeverity;
@@ -9,5 +9,6 @@ export interface Finding {
     actual: string | number | null;
     confidence: number;
     message: string;
+    selector?: string;
 }
 //# sourceMappingURL=findings.d.ts.map

@@ -15,7 +15,9 @@ const capture_page_1 = require("../render/capture-page");
 const compare_1 = require("../match/compare");
 const console_reporter_1 = require("../report/console-reporter");
 const markdown_reporter_1 = require("../report/markdown-reporter");
+const prompt_reporter_1 = require("../report/prompt-reporter");
 const json_reporter_1 = require("../report/json-reporter");
+const auto_fix_1 = require("../fix/auto-fix");
 const config_1 = require("../shared/config");
 const utils_1 = require("../shared/utils");
 // ─── CLI definition ────────────────────────────────────────────────────────────
@@ -32,7 +34,10 @@ commander_1.program
     .option('--verbose', 'Print detailed progress and confidence scores', false)
     .option('--condensed', 'Print one line per finding with no detailed breakdown', false)
     .option('--markdown', 'Output report as GitHub-flavored markdown (for PR comments)', false)
+    .option('--prompt', 'Output an AI prompt with fix instructions for each finding', false)
     .option('--json', 'Output report as JSON instead of human-readable text', false)
+    .option('--auto-fix', 'Use Claude to automatically apply CSS fixes (requires ANTHROPIC_API_KEY)', false)
+    .option('--css <paths...>', 'CSS file path(s) to update when using --auto-fix')
     .addHelpText('after', `
 Examples:
   $ design-check --figma "https://www.figma.com/design/abc123/App?node-id=10:20" --url http://localhost:3000/home
@@ -57,9 +62,14 @@ async function main() {
     const isVerbose = opts.verbose;
     const isCondensed = opts.condensed;
     const isMarkdown = opts.markdown;
-    // ── 1. Validate that either --url or --route is provided ──────────────────────
+    const isPrompt = opts.prompt;
+    const isAutoFix = opts.autoFix;
+    // ── 1. Validate inputs ────────────────────────────────────────────────────────
     if (!opts.url && !opts.route) {
         fatal('You must provide either --url <local-url> or --route <path>.');
+    }
+    if (isAutoFix && (!opts.css || opts.css.length === 0)) {
+        fatal('--auto-fix requires --css <path(s)> to specify which CSS files to update.');
     }
     // ── 2. Determine target URL ───────────────────────────────────────────────────
     let targetUrl;
@@ -177,13 +187,31 @@ async function main() {
     else if (isMarkdown) {
         console.log((0, markdown_reporter_1.formatMarkdownReport)(findings, opts.figma, targetUrl));
     }
+    else if (isPrompt) {
+        console.log((0, prompt_reporter_1.formatPromptReport)(findings, opts.figma, targetUrl));
+    }
     else if (isCondensed) {
         (0, console_reporter_1.printCondensedReport)(findings);
     }
     else {
         (0, console_reporter_1.printReport)(findings, opts.figma, targetUrl, outputDir, isVerbose);
     }
-    // ── 12. Exit code ─────────────────────────────────────────────────────────────
+    // ── 12. Auto-fix ──────────────────────────────────────────────────────────────
+    if (isAutoFix && findings.length > 0) {
+        try {
+            await (0, auto_fix_1.autoFix)({
+                cssPaths: opts.css,
+                findings: findings,
+                figmaLink: opts.figma,
+                url: targetUrl,
+                verbose: isVerbose,
+            });
+        }
+        catch (err) {
+            fatal(`Auto-fix failed: ${err.message}`);
+        }
+    }
+    // ── 13. Exit code ─────────────────────────────────────────────────────────────
     const hasErrors = findings.some((f) => f.severity === 'error');
     process.exit(hasErrors ? 1 : 0);
 }

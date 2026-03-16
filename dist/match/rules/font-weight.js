@@ -24,6 +24,7 @@ function checkFontWeight(matches, thresholds) {
                 expected: designFontWeight,
                 actual: renderedFontWeight,
                 confidence: match.confidence,
+                selector: renderedNode.selector,
                 message: `Font weight mismatch on "${designNode.name}": ` +
                     `expected ${designFontWeight}, got ${renderedFontWeight} ` +
                     `(difference: ${diff}, threshold: ${thresholds.fontWeightTolerance}).`

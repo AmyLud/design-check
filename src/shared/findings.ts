@@ -5,6 +5,9 @@ export type FindingCategory =
   | 'font-weight'
   | 'radius'
   | 'spacing'
+  | 'color'
+  | 'contrast'
+  | 'broken-image'
 
 export interface Finding {
   id: string
@@ -15,4 +18,5 @@ export interface Finding {
   actual: string | number | null
   confidence: number
   message: string
+  selector?: string
 }

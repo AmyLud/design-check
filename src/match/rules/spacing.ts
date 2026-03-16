@@ -21,6 +21,7 @@ function paddingFindings(match: ContainerMatch, delta: number): Finding[] {
       expected: `padding-${side}: ${expected}px`,
       actual: `padding-${side}: ${actual}px`,
       confidence: match.confidence,
+      selector: match.renderedNode!.selector,
       message:
         `Padding mismatch on "${match.designNode.name}": ` +
         `padding-${side} expected ${expected}px, got ${actual}px ` +
@@ -42,6 +43,7 @@ function marginFindings(match: ContainerMatch, delta: number): Finding[] {
       expected: `margin-${side}: 0px`,
       actual: `margin-${side}: ${actual}px`,
       confidence: match.confidence,
+      selector: match.renderedNode!.selector,
       message:
         `Unexpected margin on "${match.designNode.name}": ` +
         `margin-${side} is ${actual}px but the Figma design uses no margins ` +

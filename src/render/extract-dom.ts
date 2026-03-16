@@ -5,18 +5,12 @@
 export function extractDomScript(): string {
   return `
 (function extractDesignNodes() {
-  /**
-   * Parse a CSS pixel value like "16px" into a number, returning undefined if invalid.
-   */
   function parsePx(value) {
     if (!value || value === '' || value === 'none' || value === 'normal') return undefined;
     const num = parseFloat(value);
     return isNaN(num) ? undefined : num;
   }
 
-  /**
-   * Generate a simple CSS selector for an element (tag + id + first class).
-   */
   function getSelector(el) {
     let selector = el.tagName.toLowerCase();
     if (el.id) {
@@ -28,65 +22,46 @@ export function extractDomScript(): string {
     return selector;
   }
 
-  /**
-   * Get the direct visible text content of an element (not deep children).
-   * Returns undefined if the element has no direct text.
-   */
   function getDirectText(el) {
     let text = '';
     for (const node of el.childNodes) {
-      if (node.nodeType === Node.TEXT_NODE) {
-        text += node.textContent || '';
-      }
+      if (node.nodeType === Node.TEXT_NODE) text += node.textContent || '';
     }
     text = text.trim();
     return text.length > 0 ? text : undefined;
   }
 
-  /**
-   * Get all visible text content from an element and its descendants.
-   */
   function getAllText(el) {
     const text = (el.textContent || '').trim();
     return text.length > 0 ? text : undefined;
   }
 
-  /**
-   * Check if an element is visible.
-   */
   function isVisible(el, style, rect) {
     if (style.display === 'none') return false;
     if (style.visibility === 'hidden') return false;
     if (parseFloat(style.opacity) === 0) return false;
-    if (rect.width === 0 && rect.height === 0) return false;
+    // Allow zero-size for images (may be broken but still relevant)
+    if (el.tagName.toLowerCase() !== 'img' && rect.width === 0 && rect.height === 0) return false;
     return true;
   }
 
-  /**
-   * Determine whether an element is "interesting" enough to include.
-   * We want: elements with text, interactive elements, landmark elements.
-   */
   function isInteresting(el, tag, style) {
-    // Always include interactive elements
     const interactiveTags = ['a', 'button', 'input', 'select', 'textarea', 'label'];
     if (interactiveTags.includes(tag)) return true;
 
-    // Always include landmark/semantic elements
+    if (tag === 'img') return true;
+
     const semanticTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'li', 'td', 'th', 'caption', 'figcaption', 'blockquote', 'cite', 'abbr', 'time', 'mark', 'strong', 'em', 'span'];
     if (semanticTags.includes(tag)) return true;
 
-    // Include major structural elements that have a role
     const structuralTags = ['header', 'main', 'section', 'article', 'nav', 'aside', 'form', 'footer', 'div', 'ul', 'ol'];
     if (structuralTags.includes(tag)) return true;
 
-    // Include elements with explicit ARIA roles
     if (el.hasAttribute('role')) return true;
 
-    // Include elements with direct text content
     const directText = getDirectText(el);
     if (directText && directText.length > 0) return true;
 
-    // Include div/span that only contain text (leaf text containers)
     if ((tag === 'div' || tag === 'span') && el.children.length === 0) {
       const text = getAllText(el);
       if (text && text.length > 0) return true;
@@ -95,15 +70,24 @@ export function extractDomScript(): string {
     return false;
   }
 
+  /**
+   * Walk up the DOM to find the first ancestor with a non-transparent background.
+   * Falls back to white if none is found.
+   */
+  function getEffectiveBg(el) {
+    let node = el;
+    while (node && node !== document.documentElement) {
+      const bg = window.getComputedStyle(node).backgroundColor;
+      if (bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent') return bg;
+      node = node.parentElement;
+    }
+    return 'rgb(255, 255, 255)';
+  }
+
   const results = [];
   const seen = new WeakSet();
 
-  // Use TreeWalker for efficient DOM traversal
-  const walker = document.createTreeWalker(
-    document.body,
-    NodeFilter.SHOW_ELEMENT,
-    null
-  );
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT, null);
 
   let el = walker.currentNode;
   while (el) {
@@ -129,7 +113,6 @@ export function extractDomScript(): string {
       continue;
     }
 
-    // Get text: prefer direct text for containers, full text for leaves
     let text;
     if (element.children.length === 0) {
       text = getAllText(element);
@@ -137,47 +120,36 @@ export function extractDomScript(): string {
       text = getDirectText(element);
     }
 
-    // Parse font size
-    const fontSizeRaw = style.fontSize;
-    const fontSize = parsePx(fontSizeRaw);
+    const fontSize = parsePx(style.fontSize);
 
-    // Parse padding
-    const paddingTop = parsePx(style.paddingTop) || 0;
-    const paddingRight = parsePx(style.paddingRight) || 0;
+    const paddingTop    = parsePx(style.paddingTop)    || 0;
+    const paddingRight  = parsePx(style.paddingRight)  || 0;
     const paddingBottom = parsePx(style.paddingBottom) || 0;
-    const paddingLeft = parsePx(style.paddingLeft) || 0;
+    const paddingLeft   = parsePx(style.paddingLeft)   || 0;
 
-    // Parse margin
-    const marginTop = parsePx(style.marginTop) || 0;
-    const marginRight = parsePx(style.marginRight) || 0;
+    const marginTop    = parsePx(style.marginTop)    || 0;
+    const marginRight  = parsePx(style.marginRight)  || 0;
     const marginBottom = parsePx(style.marginBottom) || 0;
-    const marginLeft = parsePx(style.marginLeft) || 0;
+    const marginLeft   = parsePx(style.marginLeft)   || 0;
 
     const node = {
       selector: getSelector(element),
-      tag: tag,
-      text: text,
+      tag,
+      text,
       x: Math.round(rect.x),
       y: Math.round(rect.y),
       width: Math.round(rect.width),
       height: Math.round(rect.height),
-      fontSize: fontSize,
+      fontSize,
       fontWeight: style.fontWeight || undefined,
       color: style.color || undefined,
       backgroundColor: style.backgroundColor || undefined,
+      effectiveBackgroundColor: getEffectiveBg(element),
       borderRadius: style.borderRadius || undefined,
-      padding: {
-        top: paddingTop,
-        right: paddingRight,
-        bottom: paddingBottom,
-        left: paddingLeft
-      },
-      margin: {
-        top: marginTop,
-        right: marginRight,
-        bottom: marginBottom,
-        left: marginLeft
-      },
+      padding:  { top: paddingTop,  right: paddingRight,  bottom: paddingBottom,  left: paddingLeft  },
+      margin:   { top: marginTop,   right: marginRight,   bottom: marginBottom,   left: marginLeft   },
+      imageSrc:    tag === 'img' ? (element.src || undefined) : undefined,
+      imageBroken: tag === 'img' ? (element.complete && element.naturalWidth === 0) : undefined,
       role: element.getAttribute('role') || undefined
     };
 

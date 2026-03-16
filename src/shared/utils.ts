@@ -65,3 +65,49 @@ export function rgbaToHex(r: number, g: number, b: number, a: number): string {
 export function generateId(): string {
   return crypto.randomBytes(4).toString('hex')
 }
+
+export interface RGB { r: number; g: number; b: number }
+
+/**
+ * Parse a CSS or hex color string into RGB. Returns null if unparseable.
+ */
+export function parseColor(color: string): RGB | null {
+  if (!color) return null
+
+  const rgb = color.match(/^rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$/)
+  if (rgb) return { r: +rgb[1], g: +rgb[2], b: +rgb[3] }
+
+  const rgba = color.match(/^rgba\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*[\d.]+\s*\)$/)
+  if (rgba) return { r: +rgba[1], g: +rgba[2], b: +rgba[3] }
+
+  const hex = color.match(/^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})/i)
+  if (hex) return { r: parseInt(hex[1], 16), g: parseInt(hex[2], 16), b: parseInt(hex[3], 16) }
+
+  return null
+}
+
+/**
+ * Max per-channel difference between two colors (0–255).
+ */
+export function colorDistance(a: RGB, b: RGB): number {
+  return Math.max(Math.abs(a.r - b.r), Math.abs(a.g - b.g), Math.abs(a.b - b.b))
+}
+
+function linearizeChannel(c: number): number {
+  const s = c / 255
+  return s <= 0.03928 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4)
+}
+
+export function relativeLuminance(rgb: RGB): number {
+  return 0.2126 * linearizeChannel(rgb.r) +
+         0.7152 * linearizeChannel(rgb.g) +
+         0.0722 * linearizeChannel(rgb.b)
+}
+
+export function contrastRatio(fg: RGB, bg: RGB): number {
+  const l1 = relativeLuminance(fg)
+  const l2 = relativeLuminance(bg)
+  const lighter = Math.max(l1, l2)
+  const darker  = Math.min(l1, l2)
+  return (lighter + 0.05) / (darker + 0.05)
+}

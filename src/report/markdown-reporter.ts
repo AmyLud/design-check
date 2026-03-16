@@ -1,11 +1,14 @@
 import { Finding, FindingCategory, FindingSeverity } from '../shared/findings'
 
 const CATEGORY_LABELS: Record<FindingCategory, string> = {
-  'missing-text': 'Missing Text',
-  'font-size':    'Font Size',
-  'font-weight':  'Font Weight',
-  'radius':       'Border Radius',
-  'spacing':      'Spacing',
+  'missing-text':  'Missing Text',
+  'font-size':     'Font Size',
+  'font-weight':   'Font Weight',
+  'radius':        'Border Radius',
+  'spacing':       'Spacing',
+  'color':         'Color',
+  'contrast':      'Contrast',
+  'broken-image':  'Broken Images',
 }
 
 function groupBy<T>(items: T[], key: (item: T) => string): Record<string, T[]> {

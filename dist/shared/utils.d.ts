@@ -22,4 +22,19 @@ export declare function rgbaToHex(r: number, g: number, b: number, a: number): s
  * Generate a short unique ID for findings.
  */
 export declare function generateId(): string;
+export interface RGB {
+    r: number;
+    g: number;
+    b: number;
+}
+/**
+ * Parse a CSS or hex color string into RGB. Returns null if unparseable.
+ */
+export declare function parseColor(color: string): RGB | null;
+/**
+ * Max per-channel difference between two colors (0–255).
+ */
+export declare function colorDistance(a: RGB, b: RGB): number;
+export declare function relativeLuminance(rgb: RGB): number;
+export declare function contrastRatio(fg: RGB, bg: RGB): number;
 //# sourceMappingURL=utils.d.ts.map

@@ -9,6 +9,9 @@ import { checkFontSize } from './rules/font-size'
 import { checkFontWeight } from './rules/font-weight'
 import { checkRadius } from './rules/radius'
 import { checkSpacing } from './rules/spacing'
+import { checkColor } from './rules/color'
+import { checkContrast } from './rules/contrast'
+import { checkImages } from './rules/images'
 
 /**
  * Run all comparison rules between the Figma design and rendered page nodes.
@@ -30,18 +33,24 @@ export async function compare(
   // Match design container nodes (frames with padding/gap) to rendered nodes
   const containerMatches = matchContainers(designRoot, renderedNodes)
 
-  const presenceFindings = checkTextPresence(matches)
-  const fontSizeFindings = checkFontSize(matches, thresholds)
-  const fontWeightFindings = checkFontWeight(matches, thresholds)
-  const radiusFindings = checkRadius(matches, thresholds)
-  const spacingFindings = checkSpacing(containerMatches, thresholds)
+  const presenceFindings     = checkTextPresence(matches)
+  const fontSizeFindings     = checkFontSize(matches, thresholds)
+  const fontWeightFindings   = checkFontWeight(matches, thresholds)
+  const radiusFindings       = checkRadius(matches, thresholds)
+  const spacingFindings      = checkSpacing(containerMatches, thresholds)
+  const colorFindings        = checkColor(matches, thresholds)
+  const contrastFindings     = checkContrast(matches)
+  const imageFindings        = checkImages(renderedNodes)
 
   const allFindings = [
     presenceFindings,
     fontSizeFindings,
     fontWeightFindings,
     radiusFindings,
-    spacingFindings
+    spacingFindings,
+    colorFindings,
+    contrastFindings,
+    imageFindings
   ].flat()
 
   // Sort: errors first, then warnings, then info

@@ -24,6 +24,7 @@ export function checkFontSize(matches: MatchResult[], thresholds: ThresholdConfi
       expected: designFontSize,
       actual: renderedFontSize,
       confidence: match.confidence,
+      selector: renderedNode.selector,
       message:
         `Font size mismatch on "${designNode.name}": ` +
         `expected ${designFontSize}px, got ${renderedFontSize}px ` +

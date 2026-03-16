@@ -3,6 +3,7 @@ export interface ThresholdConfig {
     fontWeightTolerance: number;
     borderRadiusDelta: number;
     spacingDelta: number;
+    colorDelta: number;
 }
 export interface DesignCheckConfig {
     viewport: {

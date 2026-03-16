@@ -9,6 +9,9 @@ const font_size_1 = require("./rules/font-size");
 const font_weight_1 = require("./rules/font-weight");
 const radius_1 = require("./rules/radius");
 const spacing_1 = require("./rules/spacing");
+const color_1 = require("./rules/color");
+const contrast_1 = require("./rules/contrast");
+const images_1 = require("./rules/images");
 /**
  * Run all comparison rules between the Figma design and rendered page nodes.
  * Returns a combined array of findings, sorted by severity (errors first).
@@ -26,12 +29,18 @@ async function compare(designRoot, renderedNodes, config) {
     const fontWeightFindings = (0, font_weight_1.checkFontWeight)(matches, thresholds);
     const radiusFindings = (0, radius_1.checkRadius)(matches, thresholds);
     const spacingFindings = (0, spacing_1.checkSpacing)(containerMatches, thresholds);
+    const colorFindings = (0, color_1.checkColor)(matches, thresholds);
+    const contrastFindings = (0, contrast_1.checkContrast)(matches);
+    const imageFindings = (0, images_1.checkImages)(renderedNodes);
     const allFindings = [
         presenceFindings,
         fontSizeFindings,
         fontWeightFindings,
         radiusFindings,
-        spacingFindings
+        spacingFindings,
+        colorFindings,
+        contrastFindings,
+        imageFindings
     ].flat();
     // Sort: errors first, then warnings, then info
     const severityOrder = {

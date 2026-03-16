@@ -7,6 +7,9 @@ const CATEGORY_LABELS = {
     'font-weight': 'Font Weight',
     'radius': 'Border Radius',
     'spacing': 'Spacing',
+    'color': 'Color',
+    'contrast': 'Contrast',
+    'broken-image': 'Broken Images',
 };
 function groupBy(items, key) {
     return items.reduce((acc, item) => ({ ...acc, [key(item)]: [...(acc[key(item)] ?? []), item] }), {});
